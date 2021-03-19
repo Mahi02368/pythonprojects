@@ -11,15 +11,11 @@ print('Please provide us with the following database info')
 user = input('MySQL Username: \n')
 database = input('Database Name:\n')
 passwd = input('MySQL User Password: \n')
-#port = input('Port: (if not provided, leave blank and we will use port 21 by default):\n')
 backup = input('SQL FileName:\n')
 
 #take time
 print('Thanks, we will now start the file import process, it may take a while..')
-#if port != '21':
-#	migration(user, passwd, 21, host)
-#else:
-#	migration(user, database, passwd, backup)
+
 dbimport(user, passwd, database , backup)
 
 #profit
