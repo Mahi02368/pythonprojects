@@ -8,13 +8,13 @@ games = 1
 
 def total(): #Calcolare il punteggio
 	totale = player_one_gioca + player_two_gioca
-	if totale == player_one_grida and totale == player_two_grida:		
+	if totale == player_one_sceglie and totale == player_two_sceglie:		
 		player_two.append("T")
 		player_one.append("T")
-	elif totale == player_one_grida:
+	elif totale == player_one_sceglie:
 		player_one.append("V")
 		player_two.append("P")
-	elif totale == player_two_grida:
+	elif totale == player_two_sceglie:
 		player_two.append("V")
 		player_one.append("P")
 	else:
@@ -30,25 +30,25 @@ while player_one.count("V") < 3 and player_two.count("V") < 3:
 
 	#Funzione per numeri giocati e dichiarati
 	print("Dichiari: ")
-	player_one_grida = input()
+	player_one_sceglie = input()
 	print("Giochi: ")
 	player_one_gioca = input()
-	#int(player_one_grida)
+	#int(player_one_sceglie)
 	#int(player_one_gioca)
-	player_two_grida = random.randint(0, 10)
+	player_two_sceglie = random.randint(0, 10)
     
 
-	if player_two_grida <= 5:
-		player_two_gioca = random.randint(0, player_two_grida)
-	if player_two_grida > 5:
-		player_two_gioca = random.randint(player_two_grida - 5, 5)
+	if player_two_sceglie <= 5:
+		player_two_gioca = random.randint(0, player_two_sceglie)
+	if player_two_sceglie > 5:
+		player_two_gioca = random.randint(player_two_sceglie - 5, 5)
 
-	#print("Giocatore uno grida: ")
-	#print(player_one_grida)
+	#print("Giocatore uno sceglie: ")
+	#print(player_one_sceglie)
 	#print("E gioca: ")
 	#print(player_one_gioca)
-	print("Giocatore due grida: ")
-	print(player_two_grida)
+	print("Giocatore due sceglie: ")
+	print(player_two_sceglie)
 	print("E gioca: ")
 	print(player_two_gioca)
 	
@@ -56,9 +56,9 @@ while player_one.count("V") < 3 and player_two.count("V") < 3:
 	total()
 
 	score = player_one_gioca + player_two_gioca
-	if score == player_one_grida:
+	if score == player_one_sceglie:
 		print('Giocatore 1 vince')
-	elif score == player_two_grida:
+	elif score == player_two_sceglie:
 		print('Giocatore 2 vince')
 	else:
 		print('non vince nessuno')
