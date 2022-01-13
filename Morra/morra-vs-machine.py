@@ -57,11 +57,11 @@ while player_one.count("V") < 3 and player_two.count("V") < 3:
 
 	score = player_one_gioca + player_two_gioca
 	if score == player_one_sceglie:
-		print('Giocatore 1 vince')
+		print("Giocatore 1 vince")
 	elif score == player_two_sceglie:
-		print('Giocatore 2 vince')
+		print("Giocatore 2 vince")
 	else:
-		print('non vince nessuno')
+		print("non vince nessuno")
 	
 	games += 1
 
