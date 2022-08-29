@@ -82,7 +82,7 @@ while player_one.count("V") < 3 and player_two.count("V") < 3:
     games += 1
 
 date = time.time()
-filename = "%s.js" % date
+filename = "%s.json" % date
 
 with open(filename, 'w+') as file:
     file.write(str(recap))
