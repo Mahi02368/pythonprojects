@@ -19,7 +19,7 @@ migration(user, passwd, host)
 
 
 #profit
-print('Done! you can import your database or run the database-import.py file. Thanks!')
+print('Done! you can import your database or run the dbimport.py file. Thanks!')
 quit()
 
 
