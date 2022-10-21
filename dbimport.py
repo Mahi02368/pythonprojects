@@ -18,5 +18,5 @@ print('Thanks, we will now start the file import process, it may take a while..'
 dbimport(user, passwd, database , backup)
 
 #profit
-print('Done! you can import your database or run the database-import.py file. Thanks!')
+print('Done! The file was imported in your %s database. Thanks!' % database)
 quit()
